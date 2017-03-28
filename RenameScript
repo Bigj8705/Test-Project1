@@ -1,0 +1,8 @@
+# Get-ServiceTag
+$TAG = Get-wmiobject -class Win32_Bios | select-object SerialNumber -expand SerialNumber
+$ATDLaptop = 'ATD-' + $Tag + '-N1'
+$ATDDesktop = 'ATD-' + $Tag + '-N1'
+
+$FLTLaptop = 'FLT-' + $Tag + '-N1'
+$FLTDesktop = 'FLT-' + $Tag + '-N1'
+
